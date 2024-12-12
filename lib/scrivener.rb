@@ -47,7 +47,7 @@ class Scrivener
   end
 
   def _accessors
-    @_accessors & public_methods(false).select do |name|
+    @_accessors & public_methods.select do |name|
       name[-1] == "="
     end
   end
